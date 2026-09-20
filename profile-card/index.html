@@ -51,7 +51,7 @@
     </main>
 
     <footer class="text-xs text-gray-400 py-4 text-center">
-        <p>&copy; 2026 Doszhan Bakytuly. All rights reserved.</p>
+        <p>&copy; 2026 Doszhan Bakytuly. All rights reserved</p>
     </footer>
 
     <script>
@@ -62,16 +62,16 @@
 
             if (likeBtn.classList.contains('liked')) {
                 likeBtn.textContent = '🤍 Liked';
-                // Меняем серый стиль на красный при клике
                 likeBtn.classList.remove('bg-gray-100', 'border-gray-300', 'text-gray-700', 'hover:bg-gray-200');
                 likeBtn.classList.add('bg-rose-600', 'border-rose-600', 'text-white', 'hover:bg-rose-700');
             } else {
                 likeBtn.textContent = '🖤 Like';
-                // Возвращаем серый стиль обратно
                 likeBtn.classList.remove('bg-rose-600', 'border-rose-600', 'text-white', 'hover:bg-rose-700');
                 likeBtn.classList.add('bg-gray-100', 'border-gray-300', 'text-gray-700', 'hover:bg-gray-200');
             }
         });
     </script>
+
+    <script type="module" src="/main.js"></script>
 </body>
 </html>

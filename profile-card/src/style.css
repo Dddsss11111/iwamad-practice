@@ -1,0 +1,17 @@
+<script>
+        const likeBtn = document.querySelector('#like_btn');
+
+        likeBtn.addEventListener('click', function() {
+            likeBtn.classList.toggle('liked');
+
+            if (likeBtn.classList.contains('liked')) {
+                likeBtn.textContent = '🤍 Liked';
+                likeBtn.classList.remove('bg-gray-100', 'border-gray-300', 'text-gray-700', 'hover:bg-gray-200');
+                likeBtn.classList.add('bg-rose-600', 'border-rose-600', 'text-white', 'hover:bg-rose-700');
+            } else {
+                likeBtn.textContent = '🖤 Like';
+                likeBtn.classList.remove('bg-rose-600', 'border-rose-600', 'text-white', 'hover:bg-rose-700');
+                likeBtn.classList.add('bg-gray-100', 'border-gray-300', 'text-gray-700', 'hover:bg-gray-200');
+            }
+        });
+</script>

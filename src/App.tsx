@@ -1,3 +1,4 @@
+import avatarImg from '/avatar.jpg'; // Импортируем аватарку из папки public[cite: 8]
 import { ProfileCard } from './components/ProfileCard';
 import { Footer } from './components/Footer';
 import type { Skill } from './components/SkillBadge';
@@ -13,9 +14,9 @@ export function App() {
   return (
     <div className="bg-slate-100 min-h-screen flex flex-col justify-between items-center p-4 font-sans text-gray-800">
       <ProfileCard
-        name="Doszhan Bakytuly"
+        name="Досжан Бақытұлы"
         role="Aspiring Web & Software Developer"
-        avatarUrl="/avatar.jpg"
+        avatarUrl={avatarImg} // Передаем импортированную картинку[cite: 8]
         aboutText="Hello! I am an undergraduate Information Technology student at KBTU. I am passionate about building modern web applications, learning software architectures, and mastering full-stack web development."
         skills={SKILLS_DATA}
         email="student@kbtu.kz"
